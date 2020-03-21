@@ -94,6 +94,7 @@ class NewItem extends Component {
                                     name="category" id="category"
                                     value={this.state.category}
                                     onChange={this.inputChangeHandler}
+                                    invalid={!!this.getFieldError('category')}
                                 >
                                     <option value="">Please select a category...</option>
                                     {this.props.categories && this.props.categories.map(category => (
